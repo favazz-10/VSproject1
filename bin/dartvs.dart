@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main() {
+void main2() {
   String name = 'favaz';
   int age = 21;
   double mark = 8.5;
@@ -24,4 +24,22 @@ void main() {
   print('$d=${a - b}');
   print('$m=${a * b}');
   print('$D=${a / b}');
+}
+
+class Student {
+  late String name;
+  late int age;
+  late double mark;
+  static String course = 'flutter';
+  static String centre = 'luminar';
+}
+
+void main() {
+  Student f = Student();
+  print('student name is ${f.name = 'favaz'}');
+  print('student age is ${f.age = 21}');
+  print('student mark is ${f.mark = 81.5}');
+  print('student name is ${f.name = 'favaz'}');
+  print('opted for ${Student.course}');
+  print('studying in ${Student.centre}');
 }
